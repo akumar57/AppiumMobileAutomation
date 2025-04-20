@@ -37,7 +37,8 @@ public final class Drivers {
       capability.setCapability("appium:systemPort", systemPort);
       capability.setCapability("appium:webkitDebugProxyPort", port);
       capability.setCapability("appium:chromedriverAutodownload", true);
-      capability.setCapability(MobileCapabilityType.APP, FrameworkConstants.ANDROID_APK_PATH);
+      capability.setCapability("appium:appPackage", "com.swaglabsmobileapp");
+      capability.setCapability("appium:appActivity", "com.swaglabsmobileapp.MainActivity");
 
 
 
@@ -60,8 +61,6 @@ public final class Drivers {
       capability.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.ANDROID_UIAUTOMATOR2);
       capability.setCapability(MobileCapabilityType.UDID, udid);
       capability.setCapability(CapabilityType.BROWSER_NAME, MobileBrowserName.CHROME);
-      capability.setCapability(MobileCapabilityType.APP, FrameworkConstants.ANDROID_APK_PATH);
-
       capability.setCapability("appium:chromedriverPort", port);
       capability.setCapability("appium:chromedriverAutodownload", true);
             int systemPort = new Random().nextInt(1000) + 8200; // Generates between 8200-9199
