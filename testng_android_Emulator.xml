@@ -9,8 +9,9 @@
         <parameter name="emulator" value="yes"></parameter>
         <parameter name="platformName" value="android"></parameter>
         <parameter name="udid" value="emulator-5554"></parameter>
-        <parameter name="deviceName" value="Pixel_3a_API_30"></parameter>
-        <parameter name="systemPort" value="7878"/>
+        <parameter name="deviceName" value="Pixel-2109"></parameter>
+        <parameter name="systemPort" value="4723"/>
+        <parameter name="automationName" value="UIAutomator2"/>
         <classes>
             <class name="com.tests.LoginTest"/>
             <!--            <class name="com.tests.ProductsTest"/>-->
@@ -21,7 +22,7 @@
         <parameter name="emulator" value="yes"></parameter>
         <parameter name="platformName" value="android_web"></parameter>
         <parameter name="udid" value="emulator-5554"></parameter>
-        <parameter name="deviceName" value="Pixel_3a_API_30"></parameter>
+        <parameter name="deviceName" value="Pixel-2109"></parameter>
         <parameter name="systemPort" value="7878"/>
         <parameter name="chromeDriverPort" value="8787"/>
         <classes>
